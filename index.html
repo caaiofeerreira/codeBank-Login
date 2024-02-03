@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  <title>Login</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">Code BANK</div>
+      <ul class="links">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+      <div class="toggle-btn">
+       <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown-menu">
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Contato</a></li>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" id="container">
+      <!-- Formulario - Inscreva-se -->
+      <div class="form-container sign-up">
+        <form>
+          <h1>Criar conta</h1>
+          <div class="social-icons">
+              <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <span>ou utilize seu email para cadastrar</span>
+          <input type="text" placeholder="Nome">
+          <input type="email" placeholder="Email">
+          <input type="password"placeholder="Senha">
+          <button>Inscrever-se</button>
+        </form>
+      </div>
+
+      <!-- Formulario - Entrar -->
+      <div class="form-container sign-in">
+          <form>
+            <h1>Entrar</h1>
+            <div class="social-icons">
+              <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <span>ou utilize seu email e senha</span>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Senha">
+            <a href="#">Esqueci minha senha</a>
+            <button>Entrar</button>
+          </form>
+      </div>
+
+        <!-- ENTRAR -->
+        <div class="toggle-container">
+          <div class="toggle">
+            <div class="toggle-panel toggle-left">
+              <h1>Bem-vindo de volta!</h1>
+              <p>Insira seus dados pessoais para usar todos os recursos do site</p>
+              <button class="hidden" id="login">Entrar</button>
+            </div>
+
+        <!-- INSCREVA-SE -->
+            <div class="toggle-panel toggle-right">
+              <h1>Bem-vindo.</h1>
+              <p>Registre-se com seus dados pessoais para usar todos os recursos do site</p>
+              <button class="hidden" id="register">Inscreva-se</button>
+            </div>
+
+          </div>
+        </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
